@@ -1,0 +1,226 @@
+<!-- <body>
+  <div class="navbar">
+    <div class="navbar-left">
+        <img src="/images/app-logo.png" alt="Logo" class="logo">
+    </div>
+  </div>
+  <div class="login-container">
+      <div class="login-form">
+        <h2>Login to your Account</h2>
+        <form class="form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="username" placeholder="Enter username"required />
+          <br>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="password" placeholder="**********"required />
+    
+          <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe" name="rememberMe" class="" />
+            <label for="rememberMe">Remember Me</label>
+          </div>
+    
+          <button type="submit">Sign In</button>
+          <a href="#">Forgot Password?</a>
+        </form>
+        <div class="social-login">
+          <button class="social-btn google">Continue with Google</button>
+          <button class="social-btn facebook">Continue with Facebook</button>
+        </div>
+      </div>
+  </div>
+</body> -->
+
+
+<div class="bg-cover bg-center box-border overflow-hidden max-h-screen" style="background-image: url('/images/marathon.png');">
+  <div
+    class="bg-gradient-to-r from-[rgb(2,0,36)] via-[rgba(238,182,22,0.61)] to-[rgba(255,120,0,1)]"
+  >
+    <nav class="border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap items-center justify-between p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/images/app-logo.png" class="h-10" alt="Flowbite Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          ></span>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-3 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="inline-block px-6 py-1.5 ml-2 text-xl font-serif text-white bg-amber-900 rounded cursor-pointer hover:bg-amber-800 transition"
+                style="
+                  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                    -1px 1px 0 #000, 1px 1px 0 #000;
+                "
+                
+
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+
+                class="inline-block px-6 py-1.5 text-xl font-serif text-white bg-amber-900 rounded cursor-pointer hover:bg-amber-700 transition"
+                style="
+                  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                    -1px 1px 0 #000, 1px 1px 0 #000;
+                "
+                 (click)="onLogin()"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <h1 class="p-5 text-xl font-semibold font-serif lg:text-6xl" style="color: #f5f5f5; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+    Login to your Account
+  </h1>
+  
+  
+  <div class="flex items-center justify-center h-screen box-border mt-[-120px]">
+    <form
+      class="w-fit mx-auto mb-5 p-7 font-serif bg-white dark:bg-gray-800 rounded-lg shadow-md text-xl" style="min-height: 300px;">
+      <div class="h-9 relative z-0 w-full mb-7 group">
+        <input
+          type="email"
+          name="floating_email"
+          id="floating_email"
+          class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-800 focus:outline-none focus:ring-0 focus:border-amber-800 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_email"
+          class="peer-focus:font-semibold absolute text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-amber-800 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Email address</label
+        >
+      </div>
+      <div class="h-19 relative z-0 w-full mb-7 group">
+        <input
+          type="password"
+          name="floating_password"
+          id="floating_password"
+          class="block py-2.5 px-0 w-full text-lg  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-amber-800 focus:outline-none focus:ring-0 focus:border-amber-800 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_password"
+          class="peer-focus:font-semibold absolute text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-amber-800 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Password</label
+        >
+      </div>
+      
+      <div class="flex items-center mb-3">
+        <style>
+          .custom-checkbox:checked {
+              background-color: rgb(146, 64, 15); /* Set the background color */
+              border-color: #d4d47f; /* Set the border color */
+          }
+      </style>
+        <input
+          id="remember"
+          type="checkbox"
+          value=""
+          class="custom-checkbox w-5 h-5 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-black dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-offset-gray-800"
+          required
+        />
+        <label
+          for="remember"
+          class="ml-2 text-xl font-medium text-gray-900 dark:text-gray-300"
+          >Remember me</label
+        >
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="submit"
+          class="text-white bg-amber-800 cursor-pointer hover:bg-amber-600 transition focus:ring-4 focus:outline-none font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Submit
+        </button>
+      </div>
+      <div class="flex flex-row gap-3 mt-4 p-1 ">
+        <button
+            class="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-sm px-6 py-2 text-lg font-medium text-gray-800 hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-0.5 0 48 48" version="1.1">
+        
+                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Color-" transform="translate(-401.000000, -860.000000)">
+                        <g id="Google" transform="translate(401.000000, 860.000000)">
+                            <path
+                                d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24"
+                                id="Fill-1" fill="#FBBC05"> </path>
+                            <path
+                                d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333"
+                                id="Fill-2" fill="#EB4335"> </path>
+                            <path
+                                d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667"
+                                id="Fill-3" fill="#34A853"> </path>
+                            <path
+                                d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24"
+                                id="Fill-4" fill="#4285F4"> </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <span>Continue with Google</span>
+  </button>
+  <button
+    class="flex items-center bg-white border border-gray-300 rounded-lg shadow-md max-w-sm px-6 py-2 text-lg font-medium text-gray-800 hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 48 48" version="1.1">
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+                <path
+                    d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
+                    id="Facebook">
+
+                </path>
+            </g>
+        </g>
+    </svg>
+
+    <span>Continue with Facebook</span>
+  </button>
+        </div>
+    </form>
+  </div>
+</div>
+
+   
+
+
+

@@ -1,0 +1,122 @@
+/* home.component.css */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background-image: url(/images/marathon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #212140; */
+    height: 100vh;
+    
+} 
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+    
+  }
+  .navbar, .main-content > *:not(.overlay) {
+    position: relative;
+    z-index: 2; 
+    color: white; 
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    /* background-color: #FFD700; */
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,107,121,1) 35%, rgba(0,212,255,1) 100%); */
+    /* background: linear-gradient(to right, #E67E22, #F1C40F); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,182,22,0.6131244734221813) 35%, rgba(255,120,0,1) 100%);
+    color: #f5f5dc;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 45px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: rgb(120, 53, 15);;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    /* border:rgba(2,0,36,1); */
+    padding: 7px 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .btn:hover {
+    background-color: rgb(146, 64, 14);
+  }
+  
+  .main-content {
+    
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  h1{
+      font-size: 4rem;
+  }
+  
+  .tagline {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .new-user {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    
+  }
+  
+  .buttons .btn {
+    background-color: #333333;
+    width: 125px;
+    margin: 0 10px;
+  }
+
+  .buttons .btn:hover{
+    background-color: #777;
+  }

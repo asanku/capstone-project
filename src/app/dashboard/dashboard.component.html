@@ -1,0 +1,198 @@
+<div class="bg-cover bg-center box-border overflow-hidden max-h-screen" style="background-image: url('/images/marathon.png');">
+
+
+    <div
+    class="bg-gradient-to-r from-[rgb(2,0,36)] via-[rgba(238,182,22,0.61)] to-[rgba(255,120,0,1)]"
+  >
+    <nav class="border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap items-center justify-between p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/images/app-logo.png" class="h-10" alt="Flowbite Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          ></span>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-3 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="inline-block px-6 py-1.5 ml-2 text-xl font-serif text-white bg-amber-900 rounded cursor-pointer hover:bg-amber-800 transition"
+                style="
+                  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                    -1px 1px 0 #000, 1px 1px 0 #000;
+                "
+                
+  
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+  
+                class="inline-block px-6 py-1.5 text-xl font-serif text-white bg-amber-900 rounded cursor-pointer hover:bg-amber-700 transition"
+                style="
+                  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                    -1px 1px 0 #000, 1px 1px 0 #000;
+                "
+  
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+
+<div class="md:flex h-full min-h-screen font-serif">
+    <ul class="flex-column space-y space-y-4 text-md font-medium ml-5 text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+        <!-- <li>
+            <a href="#" class="inline-flex items-center mt-5 px-4 py-3 text-white bg-blue-700 rounded-lg dark:bg-blue-600" aria-current="page">
+                <svg class="w-4 h-4 me-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                </svg>
+                Edit Profile
+            </a>
+        </li> -->
+
+        <li>
+            <a (click)="editProfile()" class="inline-flex items-center mt-5 px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white" >
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M7 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h1m4-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm7.441 1.559a1.907 1.907 0 0 1 0 2.698l-6.069 6.069L10 19l.674-3.372 6.07-6.07a1.907 1.907 0 0 1 2.697 0Z"/>
+                </svg>
+                Edit Profile
+            </a>
+        </li>
+        
+          
+        <li>
+            <a (click)="dashboard()" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+                Dashboard
+            </a>
+        </li>
+        <li>
+            <a (click)="dietplan()" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                </svg>
+                
+                Daily Diet Plan
+            </a>
+        </li>
+        <li>
+            <a (click)="goal()" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/>
+                    
+                </svg>
+                Goal
+            </a>
+        </li>
+        <!-- <li>
+            <a class="inline-flex items-center px-4 py-3 text-gray-400 rounded-lg bg-gray-50 w-full dark:bg-gray-800 dark:text-gray-500">
+                <svg class="w-4 h-4 me-2 text-gray-400 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                </svg>
+            Coach Assigned</a>
+        </li> -->
+        <li>
+            <a (click)="coachass()" class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <!-- <path d="M7.824 5.937a1 1 0 0 0 .726-.312 2.042 2.042 0 0 1 2.835-.065 1 1 0 0 0 1.388-1.441 3.994 3.994 0 0 0-5.674.13 1 1 0 0 0 .725 1.688Z"/> -->
+                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                </svg>
+                Coach Assigned
+            </a>
+        </li>
+    </ul>
+    <div class="p-2 mt-5 ml-5 bg-amber-50/70 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800/70 rounded-lg w-full backdrop-blur-sm">
+      <div class="dashboard" *ngIf="athleteMetrics; else loading">
+        <h1 class="text-xl font-bold text-center my-8">Athlete Performance Dashboard</h1>
+        <div class="metrics-container flex justify-between">
+          <!-- Metrics Section (on the left side) -->
+          <div class="metrics flex flex-col gap-4 w-1/2">
+            <div class="metric border border-gray-300 p-5 rounded-md text-center">
+              <h2 class="text-lg font-semibold text-gray-700">Average Heart Rate</h2>
+              <p class="text-xl text-blue-500">{{ athleteMetrics.averageHeartRate }} bpm</p>
+            </div>
+        
+            <div class="metric border border-gray-300 p-5 rounded-md text-center">
+              <h2 class="text-lg font-semibold text-gray-700">Total Distance</h2>
+              <p class="text-xl text-blue-500">{{ athleteMetrics.totalDistance }} km</p>
+            </div>
+        
+            <div class="metric border border-gray-300 p-5 rounded-md text-center">
+              <h2 class="text-lg font-semibold text-gray-700">Best Speed</h2>
+              <p class="text-xl text-blue-500">{{ athleteMetrics.bestSpeed }} km/h</p>
+            </div>
+        
+            <div class="metric border border-gray-300 p-5 rounded-md text-center">
+              <h2 class="text-lg font-semibold text-gray-700">Last Training Session</h2>
+              <p>Date: {{ athleteMetrics.lastTrainingSession.date }}</p>
+              <p>Distance: {{ athleteMetrics.lastTrainingSession.distance }} km</p>
+              <p>Average Speed: {{ athleteMetrics.lastTrainingSession.averageSpeed }} km/h</p>
+              <p>Calories Burned: {{ athleteMetrics.lastTrainingSession.caloriesBurned }} kcal</p>
+            </div>
+          </div>
+        
+          <!-- Form Section (on the right side) -->
+          <div class="form-container ml-auto w-1/3">
+            <form (ngSubmit)="updateMetrics(form.value)" #form="ngForm" class="flex flex-col gap-4">
+              <label for="newDistance" class="font-semibold">New Distance (km):</label>
+              <input type="number" id="newDistance" name="newDistance" ngModel class="p-2 border border-gray-300 rounded-md">
+        
+              <label for="newAverageSpeed" class="font-semibold">New Average Speed (km/h):</label>
+              <input type="number" id="newAverageSpeed" name="newAverageSpeed" ngModel class="p-2 border border-gray-300 rounded-md">
+        
+              <label for="newCaloriesBurned" class="font-semibold">New Calories Burned (kcal):</label>
+              <input type="number" id="newCaloriesBurned" name="newCaloriesBurned" ngModel class="p-2 border border-gray-300 rounded-md">
+        
+              <button type="submit" class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
+                Update Metrics
+              </button>
+            </form>
+          </div>
+      
+    </div>
+    
+</div>
+<ng-template #loading>
+  <p>Loading athlete metrics...</p>
+</ng-template>
+
+
+
+</div>
+
