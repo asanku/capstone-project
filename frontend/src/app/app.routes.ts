@@ -11,6 +11,8 @@ import { GoalComponent } from './goal/goal.component';
 import { CoachassComponent } from './coachass/coachass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AthleteprofComponent } from './athleteprof/athleteprof.component';
+import { AthleteassComponent } from './athleteass/athleteass.component';
+import { EditprocoachComponent } from './editprocoach/editprocoach.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -25,6 +27,8 @@ export const routes: Routes = [
     {path: 'goal', component: GoalComponent},
     {path: 'coachass', component: CoachassComponent},
     {path: 'dashboard', component: DashboardComponent},
+    {path: 'athleteass', component: AthleteassComponent},
+    {path: 'editprocoach', component: EditprocoachComponent},
     {path: 'athleteprof', component: AthleteprofComponent}
     
 ];

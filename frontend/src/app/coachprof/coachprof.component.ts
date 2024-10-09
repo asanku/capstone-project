@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { EditproathleteComponent } from '../editproathlete/editproathlete.component';
 import { DietComponent } from '../diet/diet.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
+import { GoalComponent } from '../goal/goal.component';
+import { CoachassComponent } from '../coachass/coachass.component';
 
 @Component({
   selector: 'app-coachprof',
   standalone: true,
-  imports: [EditproathleteComponent, DietComponent],
+  imports: [EditproathleteComponent, DietComponent, DashboardComponent, GoalComponent, CoachassComponent],
   templateUrl: './coachprof.component.html',
   styleUrl: './coachprof.component.css'
 })

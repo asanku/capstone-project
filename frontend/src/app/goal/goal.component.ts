@@ -14,13 +14,18 @@ export class GoalComponent {
   editProfile(){
     this.router.navigate(['/editproathlete']);
   }
-
+  dashboard(){
+    this.router.navigate(['/dashboard'])
+  }
   dietplan(){
     this.router.navigate(['/diet']);
   }
 
   goal(){
     this.router.navigate(['/goal']);
+  }
+  coachass(){
+    this.router.navigate(['/coachass'])
   }
 
   onSubmit(){

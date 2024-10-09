@@ -3,11 +3,16 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AthleteMetricsService } from '../athlete-metrics-service.service';
+import { EditproathleteComponent } from '../editproathlete/editproathlete.component';
+import { DietComponent } from '../diet/diet.component';
+import { GoalComponent } from '../goal/goal.component';
+import { CoachprofComponent } from '../coachprof/coachprof.component';
+import { CoachassComponent } from '../coachass/coachass.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, EditproathleteComponent, DietComponent, GoalComponent, CoachprofComponent, CoachassComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

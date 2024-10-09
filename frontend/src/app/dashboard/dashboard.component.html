@@ -139,47 +139,47 @@
     </ul>
     <div class="p-2 mt-5 ml-5 bg-amber-50/70 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800/70 rounded-lg w-full backdrop-blur-sm">
       <div class="dashboard" *ngIf="athleteMetrics; else loading">
-        <h1 class="text-xl font-bold text-center my-8">Athlete Performance Dashboard</h1>
+        <h1 class="text-3xl font-bold text-center mt-16 mb-20">Athlete Performance Dashboard</h1>
         <div class="metrics-container flex justify-between">
           <!-- Metrics Section (on the left side) -->
           <div class="metrics flex flex-col gap-4 w-1/2">
-            <div class="metric border border-gray-300 p-5 rounded-md text-center">
-              <h2 class="text-lg font-semibold text-gray-700">Average Heart Rate</h2>
-              <p class="text-xl text-blue-500">{{ athleteMetrics.averageHeartRate }} bpm</p>
+            <div class="metric border border-gray-300 bg-white p-5 ml-10 rounded-md text-center">
+              <h2 class="text-xl font-semibold text-gray-700">Average Heart Rate</h2>
+              <p class="text-2xl text-blue-500">{{ athleteMetrics.averageHeartRate }} bpm</p>
             </div>
         
-            <div class="metric border border-gray-300 p-5 rounded-md text-center">
-              <h2 class="text-lg font-semibold text-gray-700">Total Distance</h2>
-              <p class="text-xl text-blue-500">{{ athleteMetrics.totalDistance }} km</p>
+            <div class="metric border border-gray-300 bg-white p-5 ml-10 rounded-md text-center">
+              <h2 class="text-xl font-semibold text-gray-700">Total Distance</h2>
+              <p class="text-2xl text-blue-500">{{ athleteMetrics.totalDistance }} km</p>
             </div>
         
-            <div class="metric border border-gray-300 p-5 rounded-md text-center">
-              <h2 class="text-lg font-semibold text-gray-700">Best Speed</h2>
-              <p class="text-xl text-blue-500">{{ athleteMetrics.bestSpeed }} km/h</p>
+            <div class="metric border border-gray-300 bg-white p-5 ml-10 rounded-md text-center">
+              <h2 class="text-xl font-semibold text-gray-700">Best Speed</h2>
+              <p class="text-2xl text-blue-500">{{ athleteMetrics.bestSpeed }} km/h</p>
             </div>
         
-            <div class="metric border border-gray-300 p-5 rounded-md text-center">
-              <h2 class="text-lg font-semibold text-gray-700">Last Training Session</h2>
-              <p>Date: {{ athleteMetrics.lastTrainingSession.date }}</p>
-              <p>Distance: {{ athleteMetrics.lastTrainingSession.distance }} km</p>
-              <p>Average Speed: {{ athleteMetrics.lastTrainingSession.averageSpeed }} km/h</p>
-              <p>Calories Burned: {{ athleteMetrics.lastTrainingSession.caloriesBurned }} kcal</p>
+            <div class="metric border border-gray-300 bg-white p-5 ml-10 rounded-md text-center">
+              <h2 class="text-xl font-semibold text-gray-700">Last Training Session</h2>
+              <p class="text-2xl text-blue-500">Date: {{ athleteMetrics.lastTrainingSession.date }}</p>
+              <p class="text-2xl text-blue-500">Distance: {{ athleteMetrics.lastTrainingSession.distance }} km</p>
+              <p class="text-2xl text-blue-500">Average Speed: {{ athleteMetrics.lastTrainingSession.averageSpeed }} km/h</p>
+              <p class="text-2xl text-blue-500">Calories Burned: {{ athleteMetrics.lastTrainingSession.caloriesBurned }} kcal</p>
             </div>
           </div>
         
           <!-- Form Section (on the right side) -->
-          <div class="form-container ml-auto w-1/3">
+          <div class="form-container ml-10 w-1/3 mt-16">
             <form (ngSubmit)="updateMetrics(form.value)" #form="ngForm" class="flex flex-col gap-4">
               <label for="newDistance" class="font-semibold">New Distance (km):</label>
-              <input type="number" id="newDistance" name="newDistance" ngModel class="p-2 border border-gray-300 rounded-md">
+              <input type="number" id="newDistance" name="newDistance" ngModel class="p-2 mr-10 border border-gray-300 rounded-md">
         
               <label for="newAverageSpeed" class="font-semibold">New Average Speed (km/h):</label>
-              <input type="number" id="newAverageSpeed" name="newAverageSpeed" ngModel class="p-2 border border-gray-300 rounded-md">
+              <input type="number" id="newAverageSpeed" name="newAverageSpeed" ngModel class="p-2 border mr-10 border-gray-300 rounded-md">
         
               <label for="newCaloriesBurned" class="font-semibold">New Calories Burned (kcal):</label>
-              <input type="number" id="newCaloriesBurned" name="newCaloriesBurned" ngModel class="p-2 border border-gray-300 rounded-md">
+              <input type="number" id="newCaloriesBurned" name="newCaloriesBurned" ngModel class="p-2 border mr-10 border-gray-300 rounded-md">
         
-              <button type="submit" class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
+              <button type="submit" class="p-5 mr-10 bg-blue-500 text-white rounded-md hover:bg-blue-700">
                 Update Metrics
               </button>
             </form>
