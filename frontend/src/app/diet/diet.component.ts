@@ -32,5 +32,8 @@ export class DietComponent {
   onSubmit(){
     this.router.navigate(['/coachprof']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
 }

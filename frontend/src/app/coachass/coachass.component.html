@@ -62,7 +62,7 @@
                   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
                     -1px 1px 0 #000, 1px 1px 0 #000;
                 "
-  
+                (click)="onLogin()"
               >
                 Login
               </a>
@@ -132,7 +132,20 @@
         </li>
     </ul>
     <div class="p-10 mt-5 ml-5 bg-amber-50/70 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800/70 rounded-lg w-full backdrop-blur-sm">
-        
+      <div class="relative z-0 w-96 mb-5 mt-6 group">
+        <div id="athleteName" class="block py-2.5 px-0 w-96 text-lg text-gray-900 bg-transparent border-b-2 border-amber-900 dark:text-white dark:border-gray-600">
+            <!-- Athlete Name will be displayed here -->
+        </div>
+        <label class="peer-focus:font-medium absolute text-lg text-amber-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] rtl:peer-focus:translate-x-1/4 peer-focus:text-amber-800 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Coach ID</label>
+    </div>
+    
+    <div class="relative z-0 w-96 mb-5 mt-6 group">
+        <div id="athleteMerits" class="block py-2.5 px-0 w-96 text-lg text-gray-900 bg-transparent border-b-2 border-amber-900 dark:text-white dark:border-gray-600">
+            <!-- Athlete's Merits will be displayed here -->
+        </div>
+        <label class="peer-focus:font-medium absolute text-lg text-amber-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] rtl:peer-focus:translate-x-1/4 peer-focus:text-amber-800 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Coach Name</label>
+    </div>
+    
 
     </div>
     

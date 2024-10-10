@@ -31,5 +31,7 @@ export class GoalComponent {
   onSubmit(){
     this.router.navigate(['/coachprof']);
   }
-
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 }

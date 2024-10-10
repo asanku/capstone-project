@@ -69,5 +69,8 @@ export class DashboardComponent implements OnInit{
   onSubmit(){
     this.router.navigate(['/coachprof']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
 }

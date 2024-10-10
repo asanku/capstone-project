@@ -18,4 +18,7 @@ export class AthleteassComponent {
   athleteass(){
     this.router.navigate(['/athleteass']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 }
