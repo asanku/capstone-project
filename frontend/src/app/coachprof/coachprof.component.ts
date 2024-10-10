@@ -33,6 +33,9 @@ export class CoachprofComponent {
   coachass(){
     this.router.navigate(['/coachass']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
   
 }

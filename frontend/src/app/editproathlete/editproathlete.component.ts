@@ -34,6 +34,9 @@ export class EditproathleteComponent {
   onSubmit(){
     this.router.navigate(['/coachprof']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
 
 }

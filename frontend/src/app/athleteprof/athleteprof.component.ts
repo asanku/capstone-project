@@ -22,5 +22,8 @@ export class AthleteprofComponent {
     this.router.navigate(['/athleteass']);
   }
 
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
 }

@@ -37,4 +37,7 @@ export class PersonalcoachComponent {
   onSubmit(){
     this.router.navigate(['/athleteprof']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 }

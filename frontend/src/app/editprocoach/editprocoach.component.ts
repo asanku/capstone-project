@@ -21,6 +21,9 @@ export class EditprocoachComponent {
   onSubmit(){
     this.router.navigate(['/athleteprof']);
   }
+  onLogin() {
+    this.router.navigate(['/login']);
+  }
 
 
 }
