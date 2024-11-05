@@ -33,7 +33,7 @@ public class PerformanceServiceImpl implements PerformanceService{
 
     private AthleteClient athleteClient;
 
-    private final String API_URL_TEMPLATE = "https://models.inference.ai.azure.com/chat/completions";
+    // API_URL_TEMPLATE
 
 // remove the below comment before execution
     
