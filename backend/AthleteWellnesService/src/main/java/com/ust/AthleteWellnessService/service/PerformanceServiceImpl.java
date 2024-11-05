@@ -33,10 +33,9 @@ public class PerformanceServiceImpl implements PerformanceService{
 
     private AthleteClient athleteClient;
 
-    // API_URL_TEMPLATE
+    private final String API_URL_TEMPLATE = "https://models.inference.ai.azure.com/chat/completions";
 
-// remove the below comment before execution
-    
+    private final String openAiApiKey = "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";
 
     @Override
     public Goal createGoal(Goal goal) {
