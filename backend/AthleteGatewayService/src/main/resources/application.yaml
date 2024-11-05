@@ -1,0 +1,36 @@
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: AtheleteCoachService
+            uri: lb://ATHLETECOACHSERVICE
+            predicates:
+              - Path=/api/v1/athlete/**
+          - id: AthleteWellnessService
+            uri: lb://ATHLETEWELLNESSSERVICE
+            predicates:
+              - Path=/api/v1/wellness/**
+  application:
+    name: AthleteGatewayService
+
+server:
+  port: 8100
+
+eureka:
+  instance:
+    prefer-ip-address: true
+#    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  pattern:
+    console: "%msg%n"
+  level:
+    web: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG

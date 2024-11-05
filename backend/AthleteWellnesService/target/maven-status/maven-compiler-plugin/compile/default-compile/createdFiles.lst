@@ -1,0 +1,10 @@
+com\ust\AthleteWellnessService\AthleteWellnessServiceApplication.class
+com\ust\AthleteWellnessService\model\Goal.class
+com\ust\AthleteWellnessService\service\PerformanceServiceImpl.class
+com\ust\AthleteWellnessService\repository\GoalRepository.class
+com\ust\AthleteWellnessService\config\RestTemplateConfig.class
+com\ust\AthleteWellnessService\model\DailyPerformance.class
+com\ust\AthleteWellnessService\repository\DailyPerformanceRepository.class
+com\ust\AthleteWellnessService\controller\Controller.class
+com\ust\AthleteWellnessService\model\Recommendation.class
+com\ust\AthleteWellnessService\service\PerformanceService.class
